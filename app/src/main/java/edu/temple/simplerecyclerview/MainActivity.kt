@@ -17,5 +17,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         //TODO Step 4: Provide a RecyclerView.Adapter
+        val numbers = List(100) { it + 1 }
+        recyclerView.adapter = NumberDisplayAdapter(numbers)
     }
 }
